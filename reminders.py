@@ -60,12 +60,13 @@ def send_first_of_month_reminders():
 
 if __name__ == '__main__':
     print("REMINDERS -- WORKING")
-    # # Schedule Monday reminders every Monday at 10 AM Kyiv time
-    # schedule.every().monday.at("10:00").do(send_monday_reminders)
+    send_monday_reminders()
+    # # # Schedule Monday reminders every Monday at 10 AM Kyiv time
+    # # schedule.every().monday.at("10:00").do(send_monday_reminders)
 
-    # Schedule first day of the month reminders at 10 AM Kyiv time
-    schedule.every(10).seconds.do(send_monday_reminders).tag("first_of_month")
+    # # # Schedule first day of the month reminders at 10 AM Kyiv time
+    # # schedule.every(10).seconds.do(send_monday_reminders).tag("first_of_month")
 
-    while True:
-        schedule.run_pending()
-        time.sleep(1)  # Sleep for 1 minute to balance responsiveness and efficiency
+    # while True:
+    #     schedule.run_pending()
+    #     time.sleep(1)  # Sleep for 1 minute to balance responsiveness and efficiency
