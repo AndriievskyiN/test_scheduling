@@ -1,1 +1,1 @@
-worker: nohup python -u reminders.py &
+worker: python reminders.py
